@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'react-router/lib/Link';
+import { Link } from 'react-router-dom';
 
 import LocaleFormattedMessage from 'components/LocaleFormattedMessage';
 
@@ -147,8 +147,7 @@ const Footer = () => (
                 .
               </p>
               <p className="monserrat">
-                © 2016 Quran.com.
-                {' '}
+                © {new Date().getFullYear()} Quran.com.{' '}
                 <LocaleFormattedMessage
                   id="nav.rightsReserved"
                   defaultMessage="All Rights Reserved"
